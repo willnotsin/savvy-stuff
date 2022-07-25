@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    background-color: hsl(23, 77%, 88%);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: auto;
+    border: 1px solid hsl(28, 48%, 25%);
+    border-radius: 5px;
+
+}
+.form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em 2em 3em;
+    width: 50%;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px;
+}
+.heading{
+    margin-bottom: 5px;
+    padding-left: 0.5em;
+}
+.heading h2{
+    font-size: 25px;
+    color: hsl(28, 48%, 25%);
+    margin-bottom: 13px;
+}
+.heading p{
+    font-size: 10px;
+    color: hsl(34, 70%, 55%);
+}
+.input{
+    margin-bottom: 5px;
+    padding: 0.5em;
+    position: relative;
+}
+.input label{
+    display: inline-block;
+    margin-bottom: 0.5em;
+    color: hsl(26, 13%, 41%);
+}
+.input input{
+    display: block;
+    border: 1px solid hsl(30, 9%, 91%);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1em;
+    font-size: 13px;
+    background-color: rgba(235, 107, 15, 0.096);
+}
+input:focus{
+    outline: 1px solid hsl(28, 48%, 25%);
+}
+
+#validation{
+    margin-bottom: 15px;
+    padding: 0.5em;
+    position: relative;
+    font-size: 13px;
+    color: hsl(28, 48%, 25%);
+}
+#validation input{
+    padding: 1em;
+}
+#validation input:checked{
+    outline: 1px solid hsl(28, 48%, 25%);
+
+}
+
+#validation label{
+    padding-left: 10px;
+}
+.validation{
+    color: green;
+}
+.validation:before{
+    position: relative;
+    left: -10px;
+    content: "&#10004;";
+}
+
+.invalid{
+    color: red;
+}
+.invalid:before{
+    position: relative;
+    left: -10px;
+    content: "&#10006;" ;
+}
+
+button{
+    width: 100%;
+    padding: 1em;
+    background-color: hsl(23, 59%, 68%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: hsla(23, 60%, 68%, 0.507);
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 1em;
+    text-align: center;
+    /* padding: 1em; */
+    margin:0.5em 0 15px 0 ;
+    font-size: 9px;
+}
+.google, .facebook{
+    width: 50%;
+    border: 1px solid hsl(26, 13%, 41%);
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 13px;
+    color: hsl(28, 48%, 25%);
+
+}
+.google:hover, .facebook:hover{
+    background-color: hsl(28, 48%, 25%);
+    color: white;
+}
+.base{
+    text-align: center;
+    font-size: 10px;
+    color: hsl(34, 70%, 55%);
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.image{
+    background: url('building.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(151, 42, 8);
+    width: 50%;
+    padding: 2em;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px;
+}
+.feedback{
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.219);
+    /* opacity: 0.6; */
+    border: none;
+    top: 70%;
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+
+
+}
+
+.feedback p{
+    /* margin: 5%; */
+    font-weight: bold;
+    color: chocolate;
+    padding: 1em;
+    backdrop-filter: blur(10px);
+
+ 
+}
+.feedback h3{
+    /* margin: 5%; */
+    font-weight: bold;
+    color: chocolate;
+    padding: 1em;
+    backdrop-filter: blur(10px);
+
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\new_stuff\\form-with-client-side-query"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "savvyBrand"
+	}
+}

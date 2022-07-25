@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Michal's sign-up stuff</title>
+  </head>
+  <body>
+    <div class="content">
+        
+        <form action="#" class="form" id="form">
+            <div class="heading">
+                <h2>Create Account</h2>
+                <p>Welcome! Let's get you started.</p>
+            </div>
+            <div>
+                <div class="input">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="input">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter full name"
+                  />
+                </div>
+                <div class="input" id="input_password">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase
+                    letter, and at least 8 characters"
+                    placeholder="Enter password"
+                  />
+                  
+                </div>
+                <div id="validation">
+                    <input
+                    type="radio"
+                    name="valid1"
+                    id="valid1"
+                    value="uppercase character"
+                  />
+                  <label for="valid1"  id="uppercase">One uppercase letter</label>
+                  <br />
+                  <input
+                    type="radio"
+                    name="valid2"
+                    id="valid2"
+                    value="number character"
+                  />
+                  <label for="valid2" id="number">One number</label>
+                  <br />
+                  <input
+                    type="radio"
+                    name="valid3"
+                    id="valid3"
+                    value="special character"
+                  />
+                  <label for="valid3"  id="special"
+                    >One special character ($ _ - * @ ( ! ^ &)</label
+                  >
+                  <br />
+                  <input
+                    type="radio"
+                    name="valid4"
+                    id="valid4"
+                    value="minimum of 8 characters"
+                  />
+                  <label for="valid4" id="length">At least 8 characters</label>
+                </div>
+                <div>
+                    <button>Sign Up</button>
+                </div>
+                <div class="socials">
+                  <div class="google">
+                    <a href="www.google.com">
+                      <i></i>
+                      <p>Sign up with Google</p></a>
+                  </div>
+                  <div class="facebook">
+                    <a href="www.facebook.com">
+                      <i></i>
+                      <p>Sign up with Facebook</p></a>
+                  </div>
+                </div>
+        </form>   
+      
+        <p class="base">Already have an account? <a href="#"><b>Log in</b></a></p>
+      </div>
+      <div class="image">
+        <div class="feedback">
+          <p>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+            nihil explicabo quaerat voluptas, distinctio nesciunt inventore
+            nisi!"
+          </p>
+          <h3>Micholo</h3>
+
+          <p>Student <br>
+          University of Lagos</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
